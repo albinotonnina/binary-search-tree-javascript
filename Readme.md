@@ -1,23 +1,13 @@
-## Sudoku Solver
+## Binary search tree implementation
+ES6 and classes
 
-### Solved with a backtracking algorithm
+![alt text](bst.gif "Binary search tree")
 
-![alt text](solution.gif "Sudoku Solver Backtracking algorithm")
-
-
-### Functions
-
-**parseBoard**: Parse the string into a 2D array and convert strings to integers for easier manipulation.
-
-**saveEmptyPositions**: Iterate through the board and save all of the empty positions into an array so we can track which numbers are mutable and keep order to our testing.
-
-**checkRow**, **checkColumn**, **check3x3Square**, **checkValue**: Check the column, row, and current 3x3 square for a match to the current value tested, which can all be called with checkValue.
-
-**solvePuzzle**: Take the parsed Sudoku board and the array of empty positions, and find the solution.
-
-**solveSudoku**: Parse the board, save the empty positions, and pass them to solvePuzzle.
-
-
+## Complexity
+* delete: Linear — O(n), or O(log n) in average case
+* insert: Linear — O(n), or O(log n) in average case
+* contains: Linear — O(n), or O(log n) in average case
+* depthFirstLog: Linear — O(n), or O(log n) in average case
 
 ### Install
 `npm install`
@@ -27,3 +17,15 @@
 
 ### Start
 `npm start`
+
+
+## TODO
+
+### games
+* Design an algorithm to find a path from one node in a binary tree to another.
+
+* Given a binary tree, check whether it’s a binary search tree or not.
+
+* Find the minimum depth of binary search tree
+
+* Given a binary search tree and a value k, please find a node in the binary search tree whose value is closest to k.
