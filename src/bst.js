@@ -6,7 +6,7 @@ export default class BinarySearchTree {
   insert(value) {
     const node = new BinarySearchTree(value)
 
-    function recurse(bst) {
+    const recurse = bst => {
       if (bst.value > value && bst.left === undefined) {
         bst.left = node
       } else if (bst.value > value) {
@@ -24,7 +24,7 @@ export default class BinarySearchTree {
   contains(value) {
     let doesContain = false
 
-    function recurse(bst) {
+    const recurse = bst => {
       if (bst.value === value) {
         doesContain = true
       } else if (bst.left !== undefined && value < bst.value) {
@@ -39,7 +39,7 @@ export default class BinarySearchTree {
   }
 
   depthFirstLog(callback) {
-    function recurse(bst) {
+    const recurse = bst => {
       callback.call(bst, bst.value)
 
       if (bst.left !== undefined) {
