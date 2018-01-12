@@ -1,4 +1,6 @@
 ## Binary search tree implementation
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/albinotonnina/binary-search-tree-javascript.svg)](https://greenkeeper.io/)
 ES6 and classes
 
 ![alt text](bst.gif "Binary search tree")
